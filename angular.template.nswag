@@ -42,6 +42,7 @@
       "markOptionalProperties": true,
       "generateCloneMethod": false,
       "typeStyle": "Interface",
+      "enumStyle": "Enum",
       "classTypes": [],
       "extendedClasses": [],
       "extensionCode": null,
