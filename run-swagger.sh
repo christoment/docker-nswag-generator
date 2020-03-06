@@ -1,7 +1,11 @@
 #!/bin/bash
 
+OUTPUT_FOLDER="workdir"
+
 CURRENT_DIR=`dirname $0`
-WORKDIR=`realpath ${CURRENT_DIR}/workdir`
+WORKDIR=`realpath ${CURRENT_DIR}/${OUTPUT_FOLDER}`
+
+mkdir -p $WORKDIR
 
 docker run \
     -v $WORKDIR:/app \
